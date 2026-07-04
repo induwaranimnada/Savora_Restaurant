@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Savora Restaurant</title>
+  <meta name="description" content="Browse Savora's full menu — appetizers, main courses, desserts, and beverages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Sav<span>ora</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="fade-in">
+      <h1>Our Menu</h1>
+      <p>Seasonal, chef-crafted, and made with the freshest ingredients.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-category="all">All</button>
+        <button class="tab-btn" data-category="appetizers">Appetizers</button>
+        <button class="tab-btn" data-category="mains">Main Course</button>
+        <button class="tab-btn" data-category="desserts">Desserts</button>
+        <button class="tab-btn" data-category="beverages">Beverages</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Appetizers -->
+        <article class="dish-card" data-category="appetizers">
+          <img src="./images/n1.jpg" alt="Bruschetta" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Heirloom Bruschetta</h3><span class="dish-price">$11</span></div>
+            <p>Toasted sourdough, heirloom tomatoes, basil oil, sea salt.</p>
+            <!-- adto cart -->
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+             </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="appetizers">
+          <img src="./images/n2.jpg" alt="Burrata Salad" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Burrata Salad</h3><span class="dish-price">$14</span></div>
+            <p>Creamy burrata, peach, arugula, aged balsamic reduction.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+             </div>
+        </article>
+        <article class="dish-card" data-category="appetizers">
+          <img src="./images/n3.jpg" alt="Tuna Tartare" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Tuna Tartare in Crispy Wonton Cups</h3><span class="dish-price">$17</span></div>
+            <p>Ahi tuna, avocado, citrus soy, crispy wonton.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+
+        <!-- Mains -->
+        <article class="dish-card" data-category="mains">
+          <img src="./images/img3.avif" alt="Grilled Ribeye" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Grilled Ribeye</h3><span class="dish-price">$42</span></div>
+            <p>Prime cut, rosemary butter, charred vegetables.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="mains">
+          <img src="./images/n4.jpg" alt="Truffle Risotto" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Truffle Risotto</h3><span class="dish-price">$28</span></div>
+            <p>Creamy arborio rice, black truffle, aged parmesan.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="mains">
+          <img src="./images/menuimg12.avif" alt="Seared Salmon" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Seared Salmon</h3><span class="dish-price">$32</span></div>
+            <p>Atlantic salmon, lemon beurre blanc, asparagus.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="mains">
+          <img src="./images/img4.avif" alt="Margherita Pizza" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Wood-Fired Margherita</h3><span class="dish-price">$18</span></div>
+            <p>San Marzano tomato, fresh mozzarella, basil.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+
+        <!-- Desserts -->
+        <article class="dish-card" data-category="desserts">
+          <img src="./images/n5.webp" alt="Tiramisu" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Classic Tiramisu</h3><span class="dish-price">$10</span></div>
+            <p>Espresso-soaked ladyfingers, mascarpone, cocoa dust.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="desserts">
+          <img src="./images/n6.jpg" alt="Chocolate Lava Cake" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Lava Cake</h3><span class="dish-price">$12</span></div>
+            <p>Warm dark chocolate, molten center, vanilla bean ice cream.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="desserts">
+          <img src="./images/n7.jpg" alt="Panna Cotta" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Vanilla Panna Cotta</h3><span class="dish-price">$9</span></div>
+            <p>Silky cream, Madagascar vanilla, mixed berry compote.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+
+        <!-- Beverages -->
+        <article class="dish-card" data-category="beverages">
+          <img src="./images/n8.jpg" alt="House Red Wine" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>House Red Wine</h3><span class="dish-price">$9</span></div>
+            <p>Smooth blend, dark fruit notes. Glass.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="beverages">
+          <img src="./images/n9.jpg" alt="Craft Cocktail" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Smoked Old Fashioned</h3><span class="dish-price">$15</span></div>
+            <p>Bourbon, demerara, applewood smoke, orange peel.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+        <article class="dish-card" data-category="beverages">
+          <img src="./images/menuimg18.avif" alt="Espresso" />
+          <div class="dish-info">
+            <div class="dish-header"><h3>Espresso</h3><span class="dish-price">$4</span></div>
+            <p>Single origin, double shot. Rich and full-bodied.</p>
+            <div class="menu-card">
+              <div class="menu-content">
+                  <button class="add-cart-btn"
+                  onclick="addToCart('Heirloom Bruschetta',11)">
+                  Add to Cart
+                 </button>
+               </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="logo">Sav<span>ora</span></a>
+          <p>Modern dining experiences, served with heart since 2012.</p>
+          <div class="socials"><a href="#">🅾</a><a href="#">ⓕ</a><a href="#">𝕏</a></div>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li><li><a href="gallery.html">Gallery</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><p>64A Pedlar Street,<br />Galle 80000</p><p>(+94) 77-852-8763</p></div>
+        <div class="footer-col"><h4>Hours</h4><p>Mon – Thu: 11:30 – 22:00</p><p>Fri – Sun: 10:00 – 23:30</p></div>
+      </div>
+      <div class="footer-bottom">© 2026 Savora Restaurant. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

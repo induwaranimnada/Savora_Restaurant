@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Savora Restaurant</title>
+  <meta name="description" content="A visual look at Savora's plates, interiors, and atmosphere." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Sav<span>ora</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="fade-in">
+      <h1>Gallery</h1>
+      <p>A glimpse into our kitchen, our plates, and our atmosphere.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="./img2/img10.jpeg" alt="Grilled steak" /></div>
+        <div class="gallery-item"><img src="./img2/img14.jpg" alt="Restaurant interior" /></div>
+        <div class="gallery-item"><img src="./img2/img4.jpg" alt="Pizza" /></div>
+        <div class="gallery-item"><img src="./img2/img8.jpg" alt="Bar area" /></div>
+        <div class="gallery-item"><img src="./img2/img1.jpg" alt="Risotto" /></div>
+        <div class="gallery-item"><img src="./images/galleryimg20.avif" alt="Plated dish" /></div>
+        <div class="gallery-item"><img src="./images/menuimg13.avif" alt="Tiramisu" /></div>
+        <div class="gallery-item"><img src="./img2/img16.jpg" alt="Panna cotta" /></div>
+        <div class="gallery-item"><img src="./img2/img2.jpg" alt="Cocktail" /></div>
+        <div class="gallery-item"><img src="./img2/img9.jpeg" alt="Cocktail" /></div>
+        <div class="gallery-item"><img src="./img2/img12.jpg" alt="Cocktail" /></div>
+        <div class="gallery-item"><img src="./img2/img13.jpg" alt="Cocktail" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="" />
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="logo">Sav<span>ora</span></a>
+          <p>Modern dining experiences, served with heart since 2012.</p>
+          <div class="socials"><a href="#">🅾</a><a href="#">ⓕ</a><a href="#">𝕏</a></div>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li><li><a href="gallery.html">Gallery</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><p>64A Pedlar Street,<br />Galle 80000</p><p>(+94) 77-852-8763</p></div>
+        <div class="footer-col"><h4>Hours</h4><p>Mon – Thu: 11:30 – 22:00</p><p>Fri – Sun: 10:00 – 23:30</p></div>
+      </div>
+      <div class="footer-bottom">© 2026 Savora Restaurant. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Savora Restaurant</title>
+  <meta name="description" content="Get in touch with Savora — reservations, inquiries, and directions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Sav<span>ora</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="fade-in">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you — reservations, events, or just to say hello.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-success">Thank you! Your message has been sent.</div>
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" />
+            <span class="error-msg" id="err-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+            <span class="error-msg" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            <span class="error-msg" id="err-subject"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us more..."></textarea>
+            <span class="error-msg" id="err-message"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+        </form>
+
+        <!-- Info -->
+        <div class="contact-info">
+          <h2>Visit Us</h2>
+          <p>Step inside and let us welcome you to a memorable evening.</p>
+
+          <div class="info-item">
+            <div class="info-icon"><img src="./images/n18.svg" alt="Address Icon"></div>
+            <div><h4>Address</h4><p>64A Pedlar Street, Galle 80000</p></div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><img src="./images/n17.svg" alt="Phone Icon"></div>
+            <div><h4>Phone</h4><p>(+94) 77-852-8763</p></div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><img src="./images/n19.svg" alt="Email Icon"></div>
+            <div><h4>Email</h4><p>savorarest@gmail.com</p></div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><img src="./images/n20.svg" alt="Hours Icon"></div>
+            <div><h4>Hours</h4><p>Mon – Thu: 11:30 – 22:00<br />Fri – Sun: 10:00 – 23:30</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map placeholder -->
+      <!-- <div class="map-placeholder" role="img" aria-label="Google Maps placeholder"> 
+        <span>Google Map Embed</span>
+      </div>
+    </div>-->
+    <section class="map-section">
+
+    <div class="map-container">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58638743666!2d79.7861642825832!3d6.921833446002937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1645512345678!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+       </section>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="logo">Sav<span>ora</span></a>
+          <p>Modern dining experiences, served with heart since 2012.</p>
+          <div class="socials"><a href="#">🅾</a><a href="#">ⓕ</a><a href="#">𝕏</a></div>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li><li><a href="gallery.html">Gallery</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><p>64A Pedlar Street,<br />Galle 80000</p><p>(+94) 77-852-8763</p></div>
+        <div class="footer-col"><h4>Hours</h4><p>Mon – Thu: 11:30 – 22:00</p><p>Fri – Sun: 10:00 – 23:30</p></div>
+      </div>
+      <div class="footer-bottom">© 2026 Savora Restaurant. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
